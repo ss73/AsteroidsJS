@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asteroids in p5</title>
+    <style> body {padding: 0; margin: 0;} </style>
+    <script src="lib/p5.js"></script>
+    <script src="Point2D.js"></script>
+    <script src="Spaceship.js"></script>
+    <script src="Boulder.js"></script>
+    <script src="Bullet.js"></script>
+    <script src="GameState.js"></script>
+    <script src="Leaderboard.js"></script>
+    <script src="Shatter.js"></script>
+    <script src="Sprite.js"></script>
+    <script src="SpriteTracker.js"></script>
+    <script src="TextRenderer.js"></script>
+    <script src="Asteroids.js"></script>
+  </head>
+  <style type="text/css" media="screen">
+    body {
+      background-color: black;
+      font-family: sans-serif;
+      color: white;
+    }
+    .container {
+      margin:auto;
+      padding: 10px;
+      width: 802px;
+      position: relative;
+      background-color: black;
+      text-align: center;
+    }
+    .game{
+      position:absolute;
+      z-index:0;
+      top:83px;
+      left:91px;
+    }
+
+    .bezel{
+      position:absolute;
+      z-index:1;
+      top:20px;
+      left:0px;
+    }    
+  </style>
+  <body>
+    <h1 class="container">Asteroids clone i JavaScript</h1>
+    <div class="container">
+      <div class="game" id="sketch">
+        <!-- Placeholder for P5 sketch-->
+      </div>
+      <div class="bezel">
+        <img width="822" height="733" src="data/bezel-crt.png">
+      </div>
+  </div>
+  </body>
+</html>
